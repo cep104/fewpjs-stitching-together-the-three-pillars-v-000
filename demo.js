@@ -26,9 +26,12 @@ function likeCallback(e) {
       // sending of information to the server succeeds.
       alert("You notified the server!");
       alert(serverMessage);
-      debugger
+      // put debugger in and see what heartstate and color state is
+      
       heart.innerText = glyphStates[heart.innerText];
+      // changes the heart from empty to full
       heart.style.color = colorStates[heart.style.color];
+      // changes the heart from blank to red
     })
     .catch(function(error) {
       alert("Something went wrong!");
